@@ -1,0 +1,85 @@
+body {
+  height: 95vh;
+  background: linear-gradient(180deg, red, yellow);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 40px auto;
+  width: 960px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+[for="duration"] {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: cursive;
+}
+
+#duration {
+  font-size: 35px;
+  width: 90px;
+  border: 3px solid black;
+  border-radius: 15px;
+  font-weight: 800;
+}
+
+#gameContainer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  background-color: rgb(191, 230, 236);
+  margin: 30px;
+}
+
+#startGameBtn {
+  font-weight: 800;
+  font-family: cursive;
+  color: rgb(17, 151, 235);
+  font-size: 45px;
+  background-color: green;
+  border: 0;
+  border-radius: 15px;
+  position: relative;
+  left: 119px;
+  top: 202px;
+  cursor: pointer;
+}
+
+#score,
+#timer,
+#topScoreContainer,
+#historyContainer,
+#endScore {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: cursive;
+  margin-left: 40px;
+}
+
+.square {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  cursor: pointer;
+}
+
+#endScore {
+  display: none;
+}
+
+#historyContainer {
+  margin-top: 20px;
+}
+
+#historyContainer ul {
+  margin: 0;
+}
