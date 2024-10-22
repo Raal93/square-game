@@ -10,7 +10,14 @@
     <div class="container">
       <div>
         <label for="duration">Game Duration (seconds)</label>
-        <input type="number" id="duration" value="3" />
+        <input type="number" id="duration" value="10" />
+      </div>
+      <div>
+        <label for="difficulty">Difficulty: </label>
+        <button id="easy" class="difficultyBtn">Easy</button>
+        <button id="medium" class="difficultyBtn active">Medium</button>
+        <button id="hard" class="difficultyBtn">Hard</button>
+        <button id="random" class="difficultyBtn">Random</button>
       </div>
       <div id="gameContainer">
         <button id="startGameBtn">Start game</button>
@@ -21,10 +28,10 @@
         <span id="timer">Time: 10</span>
       </div>
       <div id="lastGames">
-        <div id="topScoreContainer"></div>
+        <div id="topScoreContainer">0</div>
         <div id="historyContainer">
-          Last Games
-          <ul id="historyUL"></ul>
+          Last Games:
+          <ul id="historyUL" class="history"></ul>
         </div>
       </div>
     </div>
